@@ -2,7 +2,7 @@ const request = require('request');
 const chalk = require('chalk');
 
 const forecast = (latitude, longitude, callback) => {
-    const weatherUrl = 'https://api.darksky.net/forecast/68019caeb69a189b6f52c8a58df3cd3b/' + latitude + ',' + longitude + '?units=si';
+    const weatherUrl = 'https://api.darksky.net/forecast/edfe7831ab95861c69a49ec897c5dca0/' + latitude + ',' + longitude + '?units=si';
     request({ url: weatherUrl, json: true }, (error, { body }) => {
 
         if (error) {
